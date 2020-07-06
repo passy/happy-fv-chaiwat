@@ -35,48 +35,5 @@
         // obviously, this become wrong if the browser window changes size
         // so we simply reload the page on resize
     </script>
-
-    <div id="message">
-        Number of items on the screen:  <div id="fireCount">1</div>
-        <a href="http://kenneth.kufluk.com" target="_blank">&copy; Kenneth Kufluk 2010</a>
-        <a href="http://github.com/kennethkufluk/js-fireworks" target="_blank">My code is open sourced at github.</a>
-    </div>
-
-    <div id="attributions">
-        Panorama:<a href="http://www.flickr.com/photos/chrishudson/" target="_blank">flickr/ChrisH2006</a><br/>
-        Eye:<a href="http://www.flickr.com/photos/mcdemoura/" target="_blank">flickr/Márcio Cabral de Moura</a><br/>
-        Font: <a href="http://bitmapmania.m78.com/" target="_blank">BM Receipt</a>  via <a href="http://cufon.shoqolate.com/generate/" target="_blank">Cufón Generator</a>
-    </div>
-
-    <div id="slider_firework_speed"><span class="label" style="display:block;margin:10px 20px 10px -50px;">Speed</div>
-    <div id="slider_fragment_spread"><span class="label" style="display:block;margin:10px 20px 10px -50px;">Blast Radius</div>
-    <div id="slider_gravity"><span class="label" style="display:block;margin:10px 20px;">Gravity</div>
-    <div id="slider_framerate"><span class="label" style="display:block;margin:20px 20px;">Framerate</span></div>
-
-    <div id="form">
-        <form onsubmit="FireworkDisplay.launchText();return false;">
-            <div>
-                <span class="boxtext">Enter your own message and click Launch to see it written in Fireworks over London</span><br/>
-                <input id="firetext" type="text" value="your message here"/>
-                <input id="launch" type="submit" value="Launch!"/>
-            </div>
-            <div>
-                <span id="sendlink" class="boxtext">Copy this link:</span><input type="text" id="url" name="url"/>
-            </div>
-        </form>
-    </div>
-
-    <script type="text/javascript">
-        // analytics tag to report visitors.  We also report every message launched.
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-        try {
-        var pageTracker = _gat._getTracker("UA-6696309-2");
-        pageTracker._trackPageview();
-        } catch(err) {}
-    </script>
-
 </body>
 </html>

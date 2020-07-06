@@ -48,12 +48,7 @@ $(document).ready(function(){
 
     // finally, all is ready, so kick off the firework display
     var params = location.search;
-    var message = "";
-    if (params.match('msg=')) {
-        // change the message if set in the page url
-        message = unescape(params.split('?msg=')[1]);
-        $('#firetext').val(message);
-    }
+    $('#firetext').val("Happy 1st FV, Chaiwat!");
     FireworkDisplay.launchText();
 
 });
@@ -170,8 +165,7 @@ FireworkDisplay = {
             $('#form').fadeIn('slow');
         });
 
-        var text = $('#firetext').val();
-        if (pageTracker) pageTracker._trackPageview("/launched/"+escape(text));
+        var text = "Happy 1st FV, Chaiwat!";
 
         var totalHeightOffset = 0;
         var totalWidthOffset = new Array();
